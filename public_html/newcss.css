@@ -1,0 +1,546 @@
+/* 
+    Document   : newcss
+    Created on : Dec 24, 2020, 9:18:23 PM
+    Author     : mm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    font-family: 'Be Vietnam', sans-serif;
+    background: url(images/bg-simplify-section-desktop.svg);
+   margin: 0;
+  font-size: 16px
+}
+p{
+   color: #b3b2b2;
+    line-height: 1.5em;
+    margin-bottom: 35px;
+
+}
+h1 {
+    font-size: 52px;
+    line-height: 1.2em;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.2em;
+    
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+header {
+    padding-top: 25px;
+    position: relative;
+}
+header img {
+    float: left;
+}
+header li{
+    list-style-type: none;
+    float: left;
+    padding-right: 22px;
+    cursor: pointer;
+}
+header li:first-child{
+    margin-left: 17.75%;
+}
+header li:last-child{
+    margin-right: 16.15%;
+}
+header li:hover{
+   color:#b3b2b2;
+}
+header button{
+   float: right;
+}
+header .nav{
+    cursor: pointer;
+    width: 30px;
+    height: 31px;
+    position: relative;
+    display: none;
+    float: right;
+    margin-right: 5%;
+    padding-bottom: 10px;
+        
+    
+}
+header .close,
+header .hamburger{
+  display: none;
+}
+
+button{
+    color: white;
+    background-color:hsl(12, 88%, 59%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 6px hsl(13deg 100% 97%);
+    cursor: pointer;
+    outline: none;
+
+}
+button:hover{
+   opacity: .6;
+    transition: 1s;
+}
+section {
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+section .side1{
+    width: 45%;
+    float: left;
+}
+section .side2 img{
+    width: calc(90%/2);
+    float: right;
+}
+article .left{
+    width: 45%;
+    float: left;
+}
+article .right{
+    width: 41%;
+    float: right;
+    counter-reset: div;
+    
+}
+article .righ div{
+    width: 100%;
+    position: relative;
+    
+}
+article .right div:before{
+    counter-increment: div;
+    content:"0" counter(div);
+    position: absolute;
+    border-radius: 50px;
+    padding: 5px 20px;
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    right: calc(41% + 30px);
+}
+
+.testmonial {
+    text-align: center;
+    margin: 5% 0 15%;
+}
+.testmonial .test {
+    float: left;
+    width: calc(97%/3 - 16px);
+    background-color: #fbfbfb;
+    position: relative;
+    padding: 3% 8px;
+    font-size: 14px;
+    margin: 80px 0px;
+}
+.slideshow-container div:nth-child(4) {
+   display: none;
+}
+.slideshow-container .mar{
+  margin-left: 1.5%;
+    margin-right: 1.5%;
+    
+}
+.testmonial .test img {
+    position: absolute;
+    width: 18%;
+    top: -30px;
+    left: 42%;
+}
+.testmonial button{
+   text-align: center;
+}
+.last-block {
+   background-color: hsl(12, 88%, 59%);
+   padding: 50px 0;
+   color: white;
+}
+.last-block .wbt {
+  color: hsl(12, 88%, 59%);
+  background-color: white;
+  box-shadow: none;
+  float: right;
+}
+.last-block h2 {
+  display: inline;
+  
+}
+footer  {
+  background-color: black;
+  padding: 9% 0px 3%;
+  display: flex;
+ font-size: 14px;
+}
+footer .foo {
+  float: left;
+  width: calc(100%/4);
+ 
+}
+footer  img{
+    filter:brightness(10.5);
+    margin-bottom: 25%;
+}
+footer .social a img {
+cursor: pointer;
+ padding-right: 10px;
+}
+footer li:hover  {
+color: hsl(12, 88%, 59%);
+}
+footer .social a img:hover  {
+background-color: hsl(12, 88%, 59%);
+}
+
+footer li  {
+  list-style-type: none;
+    color: #e4e4e4;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 2em;
+}
+footer ul {
+    margin-top: -10px;
+}
+footer input[type="text"]  {
+ 
+ padding: 15px;
+    border-radius: 50px 50px;
+    border: none;
+    outline: none;
+    margin-bottom: 17%;
+}
+footer input[type="button"]  {
+ padding: 10px 23px;
+    border-radius: 50px 50px;
+    border: none;
+    outline: none;
+    background-color: hsl(12, 88%, 59%);
+   color: white;
+   cursor: pointer;
+  
+}
+footer input[type="button"]:hover  {
+opacity: .6;
+}
+.testmonial .slideshow-container .prev, .testmonial .slideshow-container .next {
+ display: none;
+  
+}
+@media(max-width:1054px){
+header li{
+    padding-right: 12px;
+    font-size: 14px;
+}
+h1 {
+    font-size: 42px;
+    
+}
+}
+@media(max-width:1270px){
+    header li:first-child{
+    margin-left: calc(17.75%/2);
+}
+header li:last-child{
+    margin-right: 3.15%;
+}
+header li{
+    padding-right: 12px;
+    
+}
+}
+@media(max-width:861px){
+    
+header li{
+    padding-right: 7px;
+    font-size: 10px;
+}
+footer .foo:nth-child(3),
+footer .foo:nth-child(2) {
+  float: left;
+  width: calc(60%/4);
+ 
+}
+}
+@media(max-width:700px) {
+    header li{
+    float: none;
+    padding-right: 0px;
+    display: block;
+    font-size: 22px;
+    padding-bottom: 38px;
+    
+}
+header li:first-child{
+    margin-left: 0%;
+}
+header li:last-child{
+    margin-right: 0%;
+}
+header button{
+   display: none;
+}
+header .nav-content{
+    width: 86%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    top: 79px;
+    left: 0px;
+    right: 0px;
+    padding-top: 45px;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+header .nav-show{
+  cursor: pointer;
+  position: relative;
+  float: right;
+  z-index: 3;
+}
+header .hamburger{
+  display: block;
+}
+header .close{
+  display: none;
+}
+.overla{
+  position: fixed; 
+  width: 100%;
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2;
+  
+  display: none;
+}
+section .side1{
+    width: 100%;
+    float: left;
+}
+section {
+    text-align: center;
+}
+section .side2 img{
+    width: 100%;
+    float: right;
+}
+article .left{
+    width: 100%;
+    text-align: center;
+}
+article .right{
+    width: 100%;
+    
+    
+}
+article .right div:before{
+    left: 8px;
+    right: 83%;
+    padding: 12px 23px;
+}
+article h4{
+  margin-left: 30px;
+    background-color: #ffdddd;
+    padding: 11px 40px;
+    margin-right: -7%;
+}
+article p{
+ line-height: 2em;
+ font-size: 16px;
+}
+
+/*//slideshow st*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 24px 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid hsl(12, 88%, 59%);
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: hsl(12, 88%, 59%);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slideshow-container div:nth-child(4) {
+   display: block;
+}
+.testmonial .test {
+    float: none;
+    width: 100%;
+    font-size: 22px;
+     margin: 130px 0px 0px;
+}
+.testmonial .test img {  
+    width: 14%;
+    top: -54px;
+}
+.testmonial .slideshow-container .prev, .testmonial .slideshow-container .next {
+ display: block;
+  
+}
+.testmonial button{
+  font-size: 21px;
+    padding: 21px 46px;
+
+}
+.last-block h2 {
+    display: block;
+    text-align: center;
+}
+.last-block .wbt {
+    margin-left: calc(77%/2);
+    float: none;
+
+}
+footer .container {
+    display: grid;
+    /* display: flex; */
+    grid-template-rows: 80px 156px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "top top "
+        "left right"
+        "bottom bottom ";
+}
+footer .foo {
+  float: none;
+  
+ 
+}
+footer .c1 {
+  grid-area: top;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+footer .c1 p{
+    position: absolute;
+   bottom: 0px;
+    left: 25px;
+    right: 0px;
+    top: 385px;
+}
+footer .c3 {
+  grid-area:right;
+ 
+}
+footer .c4 {
+  grid-area:left;
+ 
+}
+footer  .c5 {
+ grid-area: bottom;
+    width: 100%;
+    text-align: center;
+    position: relative;
+ 
+}
+footer img {
+    margin-top: 109px;
+}
+.foo .social {
+    position: absolute;
+    top: -75px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+}
